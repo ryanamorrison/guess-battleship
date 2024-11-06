@@ -1,0 +1,21 @@
+.guessShow {
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    right: 0px;
+    z-index: 6;
+}
+.guessHide {
+    display: none;
+}
+form#guessForm {
+    padding: 15px;
+    background-color: rgb(80, 172, 32);
+}
+.guessforminputs {
+    background-color: rgb(152, 208, 112);
+    border-color: rgb(80, 172, 32);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+

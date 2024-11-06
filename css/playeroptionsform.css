@@ -1,0 +1,39 @@
+.playerOptionsShow {
+    position: fixed;
+    top: 200px;
+    left: 600px;
+    display: block;
+    z-index: 10;
+}
+
+.playerOptionsHide {
+    display: none;
+}
+.FormPlayerOptions {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(80, 172, 32);
+    
+    width: 360px;
+    border-spacing: 5px;
+    padding: 5px;
+}
+.playertextforminputs {
+    width: 32px;
+    background-color: rgb(152, 208, 112);
+    border-color: rgb(80, 172, 32);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.playerforminputs {
+    background-color: rgb(152, 208, 112);
+    border-color: rgb(80, 172, 32);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.optionsHeader{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;    
+}

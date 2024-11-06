@@ -1,0 +1,67 @@
+<!doctype html>
+<HTML lang="en">
+<HEAD>
+	<META charset="utf-8"/>
+	<TITLE>battleship</TITLE>
+	<LINK rel="stylesheet" href="css/general.css"/>
+	<LINK rel="stylesheet" href="css/grid.css"/>
+	<LINK rel="stylesheet" href="css/feedback.css"/>
+	<LINK rel="stylesheet" href="css/guessform.css"/>
+	<LINK rel="stylesheet" href="css/playeroptionsform.css"/>
+</HEAD>
+<BODY>
+	<DIV id="backimage"></DIV>
+	<DIV id="messageArea">Hi</DIV>
+	<DIV id="scoreboard">
+		<TABLE id="scoreboardTable">
+			<TR><TD id="scoreboardHeader" colspan="2" class="scoresHeader">SCOREBOARD</TH></TR>
+			<TR><TD class="scores">guesses:</TD>     <TD id="guesses" class="scores">0</TD></TR>
+			<TR><TD class="scores">hits: </TD>       <TD id="hits" class="scores">0</TD></TR>
+			<TR><TD class="scores">remaining: </TD>  <TD id="remaining" class="scores">0</TD></TR>
+			<TR><TD class="scores">number sunk: </TD><TD id="numberSunk" class="scores">0</TD></TR>
+			<TR><TD class="scores" colspan="2">sunk: </TD></TR>
+			<TR><TD class="scores" colspan="2" id="sunk"></TD></TR>
+		</TABLE>
+	</DIV>
+	<DIV id="board">
+		<TABLE id="tableboard"></TABLE>
+	</DIV>
+	<DIV id="guess" class="guessHide">
+		<FORM id="guessForm" autocomplete="off">
+			<INPUT type="text" id="guessInput" placeholder="A1" class="guessforminputs"/>
+			<INPUT type="button" id="fireButton" value="Fire!" class="guessforminputs"/>
+		</FORM>
+	</DIV>
+	<DIV id="playerOptions" class="playerOptionsShow">
+		<DIV class="FormPlayerOptions">
+			<FORM id="showPlayerOptions" autocomplete="off">
+				<P class="optionsHeader">GAME OPTIONS</P>
+				<LABEL for="boardSizeInput">Grid Size (6-12):</LABEL> 
+				<INPUT type="text" id="boardSizeInput" class="playertextforminputs" value="10"/><BR/>
+				Standard or Random Ships in Fleet:<BR/>
+				<LABEL for="fleetKindInput">standard</LABEL>
+				<INPUT type="radio" id="fleetKindInput" name="fleetKind" value="standard" checked="checked" class="playerforminputs"/>
+				<LABEL for="fleetKindInput">random</LABEL>
+				<INPUT type="radio" id="fleetKindInput" name="fleetKind" value="random" class="playerforminputs"/>
+				<BR/>Classic or Updated Ship Names:<BR/>
+				<LABEL for="labelKindInput">classic</LABEL>
+				<INPUT type="radio" id="labelKindInput" name="labelKind" value="classic" class="playerforminputs"/>
+				<LABEL for="labelKindInput">updated</LABEL>
+				<INPUT type="radio" id="labelKindInput" name="labelKind" value="updated" checked="checked" class="playerforminputs"/>
+				<BR/>
+				<INPUT type="button" id="optionsButton" value="PLAY!" class="playerforminputs"/>
+			</FORM>
+		</DIV>
+	</DIV>
+	<SCRIPT src="scripts/misc.js"></SCRIPT>
+	<SCRIPT src="scripts/ship.js"></SCRIPT>
+	<SCRIPT src="scripts/fleet.js"></SCRIPT>
+	<SCRIPT src="scripts/view.js"></SCRIPT>
+	<SCRIPT src="scripts/model.js"></SCRIPT>
+	<SCRIPT src="scripts/guesstracker.js"></SCRIPT>
+	<SCRIPT src="scripts/controller.js"></SCRIPT>
+	<!--<SCRIPT src="scripts/test.js"></SCRIPT>-->
+	<SCRIPT src="scripts/start.js"></SCRIPT>
+
+</BODY>
+</HTML>

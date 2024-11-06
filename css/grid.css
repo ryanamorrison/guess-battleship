@@ -1,0 +1,62 @@
+div#board {
+    position: relative;
+    margin: auto;
+    width: 1024px;
+
+    z-index: 2;
+}
+
+table#tableboard {
+    position: relative;
+    margin: auto;
+    border-spacing: 0px;
+}
+
+.noborder {
+    width: 84px;
+    height: 84px;
+}
+
+.empty {
+    width: 84px;
+    height: 84px;
+    border: 1px solid rgb(80, 172, 32);
+}
+
+.hit {
+    width: 84px;
+    height: 84px;
+    border: 1px solid rgb(80, 172, 32);
+    background: url("../images/ship.png") no-repeat center center;
+}
+
+.miss {
+    width: 84px;
+    height: 84px;
+    border: 1px solid rgb(80, 172, 32);
+    background: url("../images/miss.png") no-repeat center center;
+}
+
+.x-axis {
+    text-align: center; 
+    vertical-align: middle;
+    width: 84px;
+    height: 84px;
+    border-bottom: 1px solid rgb(80, 172, 32);
+    color: rgb(80, 172, 32);
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.y-axis {
+    text-align: center; 
+    vertical-align: middle;
+    width: 84px;
+    height: 84px;
+    border-right: 1px solid rgb(80, 172, 32);
+    color: rgb(80, 172, 32);
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
